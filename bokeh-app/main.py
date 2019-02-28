@@ -216,7 +216,7 @@ def hook(plot, element):
 # scat_rend = hv.render(scat)
 
 scat = scat.opts(hooks=[hook])
-hvplot.show(scat)
+scat
 
 
 
