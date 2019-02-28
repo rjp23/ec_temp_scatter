@@ -1,12 +1,8 @@
 import datetime
-from IPython import embed
 import math
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
-import cartopy.crs as ccrs
-import cartopy.feature as cfeature
-import cartopy.io.shapereader as shpreader
 import pandas as pd
 import scipy as sp
 from netCDF4 import num2date, date2num
@@ -15,16 +11,11 @@ import glob
 import os
 import dask
 import xarray
-import cartopy.feature as cfeature
-import matplotlib.animation as animation
-from matplotlib.animation import FuncAnimation
-from shapely.geometry import Point, Polygon
 from dateutil.parser import parse
 import matplotlib.dates as mdates
 from matplotlib import ticker
 from datetime import timedelta
 import seaborn as sns
-
 import hvplot
 import hvplot.pandas
 import holoviews as hv
