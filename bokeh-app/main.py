@@ -2,12 +2,11 @@ import xarray
 import hvplot
 import holoviews as hv
 from holoviews import opts
-hv.extension('bokeh', 'matplotlib', width="100")
 import hvplot.xarray
 
 renderer = hv.renderer('bokeh')
 
-ds = xarray.open_dataset('data/ds_transcom_merged.nc')
+ds = xarray.open_dataset(join(dirname(__file__), 'data/ds_transcom_merged.nc'))
 
 #change names back from bytestrings to strings (python2->3 thing?)
 region_coords = [transcom_region.decode("utf-8") for transcom_region in ds.transcom.values]
