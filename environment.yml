@@ -1,0 +1,3 @@
+dependencies:
+  - nbserverproxy
+  - pyviz/label/dev::pyviz
