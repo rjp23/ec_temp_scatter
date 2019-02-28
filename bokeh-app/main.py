@@ -17,12 +17,10 @@ from matplotlib import ticker
 from datetime import timedelta
 import seaborn as sns
 import hvplot
-import hvplot.pandas
 import holoviews as hv
 from holoviews import opts
 hv.extension('bokeh', 'matplotlib', width="100")
 import hvplot.xarray
-from bokeh.models import Slope
 
 
 ds = xarray.open_dataset('data/ds_transcom_merged.nc')
