@@ -15,4 +15,4 @@ ds = ds.rename({'model_id':'Model Name', 'transcom':'Region'})
 
 scat = ds.hvplot.scatter(x='tas_change', y='tsl_change', groupby='Region', height=900, width=900)
 
-hvplot.show(scat).servable()
+scat.servable()
