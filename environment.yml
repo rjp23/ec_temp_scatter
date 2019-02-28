@@ -1,3 +1,1 @@
-dependencies:
-  - nbserverproxy
-  - pyviz/label/dev::pyviz
+dependencies:  - nbserverproxy  - pyviz/label/dev::holoviews=1.11.0a10  - pyviz/label/dev::hvplot  - bokeh::bokeh  - python-snappy
