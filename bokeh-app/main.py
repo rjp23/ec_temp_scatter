@@ -3,6 +3,7 @@ import hvplot
 import holoviews as hv
 from holoviews import opts
 import hvplot.xarray
+from os.path import join, dirname
 
 renderer = hv.renderer('bokeh')
 
@@ -16,6 +17,6 @@ ds = ds.rename({'model_id':'Model Name', 'transcom':'Region'})
 
 scat = ds.hvplot.scatter(x='tas_change', y='tsl_change', groupby='Region', height=900, width=900)
 
-
+#hvplot.show(scat)
 doc = renderer.server_doc(scat)
 
