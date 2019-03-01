@@ -19,4 +19,4 @@ scat = ds.hvplot.scatter(x='tas_change', y='tsl_change', groupby='Region', heigh
 
 #hvplot.show(scat)
 doc = renderer.server_doc(scat)
-
+doc.title = 'HoloViews App'
